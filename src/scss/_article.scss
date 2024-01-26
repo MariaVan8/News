@@ -1,0 +1,124 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+
+.article {
+    display: flex;
+    padding: 0;
+
+    &-img {
+        margin: 0 auto;
+        display: none;
+    }
+
+    &-section {
+        @include flex-col;
+        gap: 2vh;
+    }
+
+    &-copy {
+        p:nth-child(3) {
+            font-style: italic;
+            color: $secondary-color;
+            font-family: $primary-font;
+            font-weight: 900;
+        }
+    }
+
+    &-story {
+        background: $white-color;
+        padding: 20px;
+        text-align: center;
+    }
+
+    &-featured-story {
+        .article-img {
+            display: flex;
+            width: 200px;
+        }
+    }
+
+    &-tags {
+        display: none;
+    }
+
+    /* Tablet (from 768px) */
+    @media (min-width: 768px) {
+        width: 60%;
+    }
+
+    /* Desktop (from 960px) */
+    @media (min-width: 960px) {
+        @include flex-col;
+        width: 70%;
+        margin: 0 auto;
+        padding: 20px;
+
+        &-section {
+
+            @include flex-row;
+            flex-wrap: wrap;
+            gap: 1vh;
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        &-copy {
+            @include flex-col;
+            width: 100%;
+            padding: 0 20px;
+            text-align: left;
+        }
+
+        &-img {
+            display: none;
+            flex-direction: row;
+        }
+
+        &-story {
+            @include flex-row;
+            width: 49%;
+            background: $white-color;
+            padding: 20px 0;
+        }
+
+        &-featured-story {
+            @include flex-row;
+            width: 100%;
+            padding: 20px;
+            align-items: center;
+
+            .article-img {
+                width: 200px;
+            }
+        }
+
+        &-tags {
+            @include flex-row;
+            flex-wrap: wrap;
+            gap: 1vh;
+            width: 100%;
+        }
+
+        span {
+            @include flex-row;
+            padding: 3px 5px;
+            font-size: 0.8em;
+            background-color: $primary-color;
+        }
+
+    }
+
+    @media (min-width: 1200px) {
+        &-section {
+            gap: 2vh;
+        }
+
+        &-featured-story {
+            .article-img {
+                width: 300px;
+            }
+        }
+    }
+
+}

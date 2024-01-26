@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "category": "Featured Web Development Tools",
+    "items": [
+      {
+        "title": "React.js",
+        "description": "A JavaScript library for building user interfaces. Great for single-page applications.",
+        "img": "/Images/react-js.png"
+      },
+      {
+        "title": "GitHub Copilot",
+        "description": "An AI-powered coding assistant that helps you write new code and understand and work with existing code faster. It suggests whole lines or blocks of code as you type and works with a broad range of frameworks and languages.",
+        "img": "/Images/github-copilot.png"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "category": "Quick Tips and Tricks",
+    "tips": [
+      "Use CSS variables for easy theme management.",
+      "Employ semantic HTML for better SEO and accessibility.",
+      "Utilize `console.table()` in JavaScript for a clearer visualization of array or object data in the console. It displays data in a tabular form, making complex data structures easier to understand during debugging."
+    ]
+  },
+  {
+    "id": 3,
+    "category": "Web Dev Humor",
+    "content": [
+      {
+        "type": "Meme",
+        "img": "/Images/meme.png"
+      }
+    ]
+  }
+]

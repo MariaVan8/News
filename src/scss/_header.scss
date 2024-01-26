@@ -1,0 +1,124 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+@use 'placeholders' as *;
+
+.main {
+  &-header {
+    @include flex-col;
+    background: $darkest-color;
+
+    @media (min-width: 768px) {
+      background: none;
+      padding: 40px;
+    }
+  }
+}
+
+.nav {
+  &-menu-trigger {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+
+    &-links {
+      @extend %nav-colour;
+      text-decoration: none;
+    }
+
+    span {
+      opacity: 1;
+      left: 0;
+      display: flex;
+      justify-content: flex-end;
+      width: 30px;
+      height: 3px;
+      border-radius: 10px;
+      color: black;
+      background-color: $primary-color;
+      transform: rotate(0deg);
+      transition: $transition-time;
+
+      &:nth-child(1) {
+        top: 0;
+      }
+
+      &:nth-child(2) {
+        top: 20px;
+      }
+
+      &:nth-child(3) {
+        top: 18px;
+      }
+    }
+
+
+  }
+
+  &-is-open {
+    span {
+      &:nth-child(1) {
+        transform: translateY(11px) rotate(135deg);
+      }
+
+      &:nth-child(2) {
+        opacity: 0;
+        transform: translateX(-60px);
+      }
+
+      &:nth-child(3) {
+        transform: translateY(-11px) rotate(-135deg);
+      }
+    }
+  }
+
+  &-logo {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+
+    img {
+      width: 150px;
+      display: flex;
+    }
+  }
+
+  &-container {
+    display: none;
+    list-style-type: none;
+    padding: 15px;
+    background: $primary-color;
+  }
+
+  &-is-open {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: 768px) {
+    &-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      @include marquee-border-bottom;
+      @include marquee-border-top;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      background: none;
+    }
+
+
+    &-logo {
+      display: flex;
+
+      img {
+        width: 200px;
+      }
+    }
+
+    &-menu-trigger {
+      display: none;
+    }
+  }
+}

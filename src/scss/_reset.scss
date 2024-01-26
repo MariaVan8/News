@@ -1,0 +1,47 @@
+@use "typography" as *;
+@use "variables" as *;
+
+body {
+  background: #ccc;
+
+  @media (min-width: 960px) {
+    background: url("./Images/rain-bg-02.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+
+// :root {
+//   --primary-color: #024959;
+//   --secondary-color: #3CA6A6;
+//   --white-color: #F2E3D5;
+//   --dark-color: #4d4d4d;
+//   --accent-color: #F25D50;
+//   --hover-color: #F29325;
+//   --feature-color: #C4E7E1;
+//   --tertiary-color: #A3C9BA;
+//   --transition-time: 0.3s;
+//   /* new custom property */
+//   --animation-time: 2s;
+//   /* new custom property */
+//   --sidebar-width: 90%;
+//   /* new custom property */
+//   --sidebar-tablet-width: 30%;
+//   /* new custom property */
+//   --sidebar-desktop-width: 30%;
+//   /* new custom property */
+//   --primary-font: 'Playfair Display', serif;
+//   --secondary-font: 'Mulish', sans-serif;
+// }
+
+#root {
+  // max-width: 1280px;
+  margin: 0 auto;
+  // padding: 1rem;
+
+  @media (min-width: 640px) {
+    // padding: 2rem;
+  }
+}

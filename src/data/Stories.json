@@ -1,0 +1,97 @@
+[
+  {
+    "id": "1",
+    "headline": "Pawzzle: Guess the Breed Edition",
+    "excerpt": "Immerse yourself in a captivating word game that combines the excitement of guessing with a love for dogs, challenging players to identify mystery dog breeds in a unique and enjoyable gaming experience.",
+    "author": "Pam Pragides",
+    "published_date": "2024-01-15",
+    "category": "Games",
+    "tags": [
+      "Games",
+      "JavaScript",
+      "Pets"
+    ],
+    "image": "pawzzle.jpg"
+  },
+  {
+    "id": "2",
+    "headline": "Barky Bones",
+    "excerpt": "Your local pet haven provides a diverse range of premium products and personalized care, ensuring every furry friend receives the attention and quality they deserve.",
+    "author": "Pam Pragides",
+    "published_date": "2024-01-16",
+    "category": "Pets",
+    "tags": [
+      "Pets",
+      "Invoice"
+    ],
+    "image": "barky-bones.jpg"
+  },
+  {
+    "id": "3",
+    "headline": "TravelSite: A New Horizon for Travel Enthusiasts",
+    "excerpt": "TravelSite, a platform born from a passion for travel, offers personalized destination guides and recommendations, transforming trip planning into an exciting and seamless experience.",
+    "author": "Maria Revelo",
+    "published_date": "2024-01-15",
+    "category": "Travel Technology",
+    "tags": [
+      "TravelSite",
+      "Travel Planning",
+      "Personalized Experience"
+    ],
+    "image": "travel.png"
+  },
+  {
+    "id": "4",
+    "headline": "WeatherNow: Replicating Google's Weather App with a Twist",
+    "excerpt": "WeatherNow, a project close to my heart, replicates the functionality of Google's weather app, providing real-time weather updates by integrating a live weather API for accuracy and fun.",
+    "author": "Maria Revelo",
+    "published_date": "2024-01-16",
+    "category": "Software Development",
+    "tags": [
+      "WeatherNow",
+      "Real-time Data",
+      "Weather API"
+    ],
+    "image": "weatherApp.png"
+  },
+  {
+    "id": "5",
+    "headline": "Reel Popcorn: A Popcorn Lover's Dream",
+    "excerpt": "Popcorn in hand, our movie database is your digital ticket to a cinematic feast, offering a delectable spread of film insights, reviews, and recommendations to savor with every crunch",
+    "author": "Pam Pragides, Maria Revelo, Alex Aguilar",
+    "published_date": "2024-01-16",
+    "category": "Software Development",
+    "tags": [
+      "API",
+      "React",
+      "Movie Database"
+    ],
+    "image": "reel-popcorn.png"
+  },
+  {
+    "id": "6",
+    "headline": "Hangman",
+    "excerpt": "Test your word knowledge with this classic game of hangman, featuring a variety of words and difficulty levels to choose from.",
+    "author": "Alex Aguilar",
+    "published_date": "2024-01-16",
+    "category": "Puzzle",
+    "tags": [
+      "Games",
+      "JavaScript"
+    ],
+    "image": "hangman.png"
+  },
+  {
+    "id": "7",
+    "headline": "Calculator",
+    "excerpt": "Need a calculation done? Try this react made calculator. Able to handle all basic functionality.",
+    "author": "Alex Aguilar",
+    "published_date": "2024-01-16",
+    "category": "Puzzle",
+    "tags": [
+      "React",
+      "JavaScript"
+    ],
+    "image": "calculator.jpg"
+  }
+]

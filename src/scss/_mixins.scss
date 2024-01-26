@@ -1,0 +1,22 @@
+@use "variables" as *;
+
+@mixin marquee-border-top {
+    border-top: solid 1px $primary-color;
+}
+
+@mixin marquee-border-bottom {
+    border-bottom: solid 1px $primary-color;
+}
+
+@mixin flex-col {
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+}
+
+
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+    // align-items: center;
+}

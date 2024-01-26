@@ -1,0 +1,110 @@
+@use "variables" as *;
+@use "mixins" as *;
+// @use "typography" as *;
+
+.sidebar {
+  @include flex-col;
+  justify-content: space-between;
+  width: $sidebar-width;
+  background-color: $tertiary-color;
+  transition: background-color $transition-time;
+  color: $white-color;
+  margin: 0 auto;
+  padding: 15px;
+  gap: 2rem;
+
+  &-wrapper {
+    @include flex-col;
+    justify-content: space-between;
+    width: 100%;
+
+    >p {
+      overflow: hidden;
+      text-align: center;
+      padding: 1rem;
+      font-weight: 400;
+
+    }
+
+    h3 {
+      text-align: center;
+      padding-top: 20px;
+    }
+
+  }
+
+  &-heading {
+    margin: 0.5rem 0;
+    text-align: center;
+    color: $primary-color;
+    font-size: 1.5rem;
+  }
+
+  div {
+    >h2 {
+      // color: $primary-color;
+      // font-family: $primary-font;
+      font-size: 1.5rem;
+      text-align: center;
+      margin: 0;
+      border-bottom: 1px solid $primary-color;
+      padding: 20px 0;
+    }
+
+    p {
+      // margin-bottom: 16px;
+      transition: background-color 0.3s ease;
+      text-align: center;
+      padding-top: 20px;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+
+
+
+
+    p+p {
+      // margin-top: 20px;
+      // padding: 10px 0;
+      line-height: 1.1rem;
+    }
+  }
+
+
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  &-react {
+    animation: rotate 2s linear infinite;
+
+  }
+
+  &-img {
+    width: 12rem;
+    // height: 12rem;
+    object-fit: cover;
+    margin: 1rem auto;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin: 10px auto;
+    padding: 10px;
+    width: $sidebar-tablet-width;
+  }
+
+  @media (min-width: 960px) {
+    width: $sidebar-desktop-width;
+    margin: 20px 20px 20px 0;
+    padding: 30px;
+  }
+
+}
